@@ -1,0 +1,129 @@
+:root
+{
+    --mainColoe:#ff7978;
+    --bgUpdate:rgb(107, 194, 107);
+    --bgDelete:rgb(196, 63, 63);
+}
+.homePage
+{
+    font-family: "Lora", serif;
+}
+.mainPage
+{
+    background-color: #ff7978;
+    width: 100%;
+    height: 100vh;
+    font-family: "Noto Serif", serif;
+}
+.overLay
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/bg-intro-desktop.png');
+}
+input::placeholder
+{
+    text-transform: capitalize;
+}
+footer p
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+.mainTitle
+{
+    font-family: "Dancing Script", cursive;
+}
+/* --------------------------------home page style--------------------------- */
+.mainPage-2
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #f5b6b6;
+    font-family: "Noto Serif", serif;
+}
+ .overLay-2
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/bg-intro-desktop.png');
+    background-color: rgba(0, 0, 0,0.2);
+}
+.homePage
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #f8eeee;
+}
+.overlaySection 
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/bg-intro-desktop.png');
+    background-color: rgba(0, 0, 0,0.1);   
+}
+/*  */
+.logButton
+{
+    width: 25%;
+}
+.submitBtn
+{
+    background-color: var(--bgUpdate);
+}
+.submitBtn:hover{
+    background-color: var(--mainColoe);
+}
+.visitSite
+{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(98, 200, 240);
+    color: whitesmoke;
+    padding: 2px 18px;
+    text-align: center;
+}
+.updateSite
+{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bgUpdate);
+    color: whitesmoke;
+    padding: 2px 10px;
+    text-align: center;
+}
+.deleteSite
+{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bgDelete);
+    color: whitesmoke;
+    padding: 2px 10px;
+}
+.updateIcon
+{
+    color: var(--bgUpdate);
+}
+.deleteIcon
+{
+    color: var(--bgDelete);
+}
+#username
+{
+    color: var(--bgDelete);
+}
+.searchInput
+{
+    width: 90%;
+   
+}
+.logoutbtn
+{
+    background-color: var(--bgDelete) !important;
+    border: none;
+}
+
+.searchIcon
+{
+    color: #3D3B40;
+}

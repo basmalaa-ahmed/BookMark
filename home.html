@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark |</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/bookmark.png">
+    <link rel="stylesheet" href="font-awesome-6/css/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body onload="displayWelcomeUser()">
+    <section class="homePage">
+      <div class="overlaySection">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="true"
+              aria-label="Toggle navigation"
+              id="navOptionBtn"
+              onclick="navbarOptions()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show justify-content-between mx-4" id="navbarSupportedContent">
+              <div>
+                <h4 id="username"></h4>
+              </div>
+             <button class="logoutbtn btn"><a class="nav-link  text-white " onclick="logout()" >Logout</a></button>
+            </div>
+          </div>
+        </nav>
+        <div class="container  bg-light rounded-3 mt-4 py-3 d-flex justify-content-evenly">
+          <input type="search" class="form-control searchInput" id="searchBTN" placeholder="search for the site..." />
+          <button class="btn "><i class="fa-brands fa-searchengin fs-2 searchIcon" ></i></button>
+        </div>
+        <div class="container  bg-light rounded-3 mt-2 py-4 px-5">
+          <div class="row justify-content-between gy-3">
+            <div class="col-lg-5  p-2 rounded-3   shadow-lg p-3  bg-body-tertiary">
+              <form>
+                <div class="mb-3">
+                  <label for="siteName" class="form-label text-capitalize fw-semibold">website name <i class="fa-solid fa-highlighter"></i></label>
+                  <input type="text" class="form-control" id="siteName"  />
+                  <div id="" class="form-text d-none">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="siteURL" class="form-label text-capitalize fw-semibold">website link <i class="fa-solid fa-link"></i></label>
+                  <input type="text"class="form-control" id="siteURL" />
+                </div>
+                <button class="btn submitBtn text-white text-capitalize " id="addBTN">add bookMark</button>
+              </form>
+              <p id="siteCounter" class="text-capitalize text-success fw-semibold mt-2"> </p>
+            </div>
+            <!-- list -->
+            <div  class="col-lg-6 form-container p-2 rounded-3  shadow-lg p-3  bg-body-tertiary">
+                <table class="table table-hover text-center" >
+                  <p class="text-capitalize text-center text-danger fw-semibold d-none" id="warnning">Oops! what you are looking for does'nt exist <i class="fa-solid fa-triangle-exclamation"></i></p>
+                    <thead>
+                        <th class="text-capitalize text-success text-center tableHead">bookMark </th>
+                        <th class=" text-info text-center fs-5"><i class="fa-solid fa-eye"></i> </th>
+                        <th class="  text-center updateIcon fs-5"><i class="fa-solid fa-pen-to-square"></i> </th>
+                        <th class="  text-center deleteIcon fs-5"><i class="fa-solid fa-trash-can"></i> </th>
+                    </thead>
+                    <tbody id="tableBody">
+                     
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log IN |</title>
+    <link rel="icon" href="image/openLock.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Moon+Dance&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section class="mainPage-2 container-fluid">
+        <div class="overLay-2 d-flex align-items-center">
+           <div class="w-50 m-auto">
+            <div class="bg-primary rounded">
+                <p class="text-capitalize text-white py-2 text-center"> data must matche the one you entered previously to be able to enter the main page</p>
+            </div>
+            <form class=" bg-white p-4 rounded">
+                <div class="mb-3">
+                  <input  type="email" class="form-control" placeholder="enter your email" id="loginEmail" >
+                </div>
+                <div class="mb-3">
+                  <input  type="password" class="form-control" placeholder="enter your password" id="loginPassword" >
+                </div>
+                <p class="d-none text-capitalize text-center text-success" id="fillMsg"> fill the inputs first</p>
+                <p class="d-none text-capitalize text-center text-danger" id="wrongMsg"> your email or password is incorrect </p>
+                <a class="btn btn-success w-100 mb-3 text-decoration-none" id="loginBtn" onclick="login()">Login</a>
+                <!-- <p class="text-white">don't have an accoount? <a href="signUp.html" class="text-white text-decoration-none">Sign Up</a></p> -->
+              </form>
+              <footer class="mt-3">
+                <p class="text-capitalize  fw-semibold" id="returnMSG" >
+                  don't have an account...? <a href="file/signup.html" class="text-dark fw-semibold text-decoration-none">sign up</a>. 
+                 
+                </p>
+              </footer>
+           </div>
+        </div>
+    </section>
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
